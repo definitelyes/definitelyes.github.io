@@ -7,6 +7,7 @@
 /* Popup container - can be anything you want */
 .popup {
   position: relative;
+  
   display: inline-block;
   cursor: pointer;
   -webkit-user-select: none;
@@ -56,23 +57,38 @@
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-body { background-image:url('https://media.giphy.com/media/8gwgQZR82xB2o/giphy.gif');
+
+body { 
+background-border:5px;
+background-image:url('https://media.giphy.com/media/26CYzjDCeIns0EZt6/giphy.gif');
+background-padding:60px;
+background-repeat: no-repeat ;
+background-size: 1200px,1200px; 
+background-attachment: fixed;
+  background-position: center; }
+
+#img {  
+
+background-image:url('https://media.giphy.com/media/8gwgQZR82xB2o/giphy.gif');
 background-padding:45px;
 background-repeat: no-repeat ;
-background-size: 650px,650px; 
+background-size: 650px,1000px; 
 background-attachment: fixed;
   background-position: center; }
 </style>
 </head>
 <body style="text-align:center">
 
-
-
+<div id="img">
+<br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br>
 <div class="popup" onclick="myFunction()"><text align="center"><font color="WHITE"><br><br><br<br><br><br><b>ASK ME</b>
   <span class="popuptext" id="myPopup"><font size=6><br><b> D E F I N I T E L Y </b><br><b>Y E S !</b></span>
-</div>
 
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+</div>
+</div>
 <script>
 // When the user clicks on div, open the popup
 function myFunction() {
